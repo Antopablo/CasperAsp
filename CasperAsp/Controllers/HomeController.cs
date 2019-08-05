@@ -45,7 +45,7 @@ namespace CasperAsp.Controllers
             if (reader.HasRows)
             {
                 reader.Close();
-                return View("Contact");
+                return RedirectToAction("Index", "Projet");
             }
             //Pas trouvé dans la BDD
             else
