@@ -53,7 +53,7 @@ div.login {
     transform: skew(0deg,8deg) translateX(-50%);
 }
 
-.login .form {
+.form {
     position: absolute;
     top: 210px;
     background: #f6f6f6;
@@ -61,60 +61,42 @@ div.login {
     height: calc(100% - 180px);
 }
 
-    .login .form .wrapper {
+.wrapper {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         width: 85%;
+        bottom : 10%;
     }
 
-    .login .form .row {
+.row {
         margin: 20px 0px;
+        display: flex;
+        justify-content: space-around;
+        
     }
 
-        .login .form .row .label {
+.label {
             font-size: 12px;
             font-weight: 600;
             color: rgb(100,100,100);
+            max-width : 50px;
+            max-height : 20px;
+            border : none !important;
+            border-width : 0 !important;
         }
 
-        .login .form .row input {
-            margin-top: 2px;
-            font-size: 13px;
-            color: rgb(70,70,70);
-            border: none;
-            border-bottom: 1px solid rgba(100,100,100,0.6);
-            outline: none;
-            height: 25px;
-            background: transparent;
-            width: 100%;
-        }
+.button_login {
+    margin-top: 15px;
+    font-size: 13px;
+    color: rgb(100,100,100);
+    border: none;
+    outline: none;
+    height: 40px;
+    text-transform: uppercase;
+    background: rgba(255, 60, 65, 0.84);
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+}
 
-        .login .form .row button {
-            margin-top: 0px;
-            font-size: 13px;
-            color: rgb(100,100,100);
-            border: none;
-            outline: none;
-            height: 40px;
-            text-transform: uppercase;
-            background: rgba(255, 60, 65, 0.84);
-            width: 100%;
-            color: #fff;
-            cursor: pointer;
-        }
-
-    .login .form .signup {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        font-size: 13px;
-        bottom: 50px;
-        color: #333;
-    }
-
-        .login .form .signup a {
-            color: rgba(255, 60, 65, 0.84);
-            text-decoration: none;
-            font-weight: 600;
-        }
