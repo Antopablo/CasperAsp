@@ -34,17 +34,20 @@ namespace CasperAsp.Controllers
 
         public ActionResult connect_click(User u)
         {
+            // connection mySQL
             myServerSQL = new MySqlConnection("server=137.74.118.171;userid=sta41;persistsecurityinfo=True;password=w5fc03;database=sta41");
             myServerSQL.Open();
             cmd = new MySqlCommand("SELECT Identifiant FROM Users WHERE Identifiant = " + "'" + u.Name + "' AND Password = '" + u.Password + "'", myServerSQL);
 
             MySqlDataReader reader = cmd.ExecuteReader();
 
+            // dans la BDD
             if (reader.HasRows)
             {
                 reader.Close();
                 return View("Contact");
             }
+            //Pas trouvé dans la BDD
             else
             {
                 reader.Close();
