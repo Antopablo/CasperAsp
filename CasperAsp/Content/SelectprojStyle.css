@@ -7,6 +7,9 @@ body {
 }
 
 html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: "Raleway";
 }
 
@@ -35,4 +38,8 @@ input {
     width: 200px;
     color: #fff;
     cursor: pointer;
+}
+
+option {
+    font-size : 20px;
 }
