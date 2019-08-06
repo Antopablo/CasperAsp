@@ -1,0 +1,38 @@
+﻿
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    background: url("https://www.probatmaintenance.fr/wp-content/uploads/2017/01/Fond-d%C3%A9cran-gris-Bars-Op%C3%A9ra-1440x2560.jpg") center no-repeat;
+    height: auto;
+}
+
+html {
+    font-family: "Raleway";
+}
+
+form {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+#select {
+    height : 50px;
+    width : 200px;
+}
+
+input {
+    margin-top: 15px;
+    font-size: 13px;
+    color: rgb(100,100,100);
+    border: none;
+    outline: none;
+    height: 40px;
+    text-transform: uppercase;
+    background: rgba(255, 60, 65, 0.84);
+    width: 200px;
+    color: #fff;
+    cursor: pointer;
+}
