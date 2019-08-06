@@ -1,6 +1,9 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background: url("https://www.probatmaintenance.fr/wp-content/uploads/2017/01/Fond-d%C3%A9cran-gris-Bars-Op%C3%A9ra-1440x2560.jpg") center no-repeat;
+    background-size: cover;
+    height: auto;
 }
 
 /* Set padding to keep content from hitting the edges */

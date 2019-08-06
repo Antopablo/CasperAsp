@@ -10,7 +10,6 @@ namespace CasperAsp.Controllers
 {
     public class ProjetController : Controller
     {
-        public List<string> ListeProjet { get; set; }
         // GET: Projet
         public ActionResult Index()
         {
@@ -18,11 +17,12 @@ namespace CasperAsp.Controllers
             myServerSQL.Open();
             MySqlCommand cmd = new MySqlCommand("SELECT Name FROM Projets", myServerSQL);
             MySqlDataReader reader = cmd.ExecuteReader();
-            ListeProjet = new List<string>();
 
+            int compteur = 0;
             while (reader.Read())
             {
-                ListeProjet.Add(reader["Name"].ToString());
+                TempData["Projets" + compteur] += reader["Name"].ToString();
+                compteur++;
             }
             reader.Close();
            

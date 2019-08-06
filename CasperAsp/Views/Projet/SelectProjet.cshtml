@@ -4,4 +4,20 @@
     Layout = null;
 }
 
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/SelectprojStyle.css"/>
+</head>
+
+<body>
+    <form action="@Url.Action("Index", "Dashboard")" id="form-proj" name="form-proj" method="post">
+        <select id="select">
+            @foreach (var item in TempData.Keys)
+            {
+                <option>@TempData[item]</option>
+            }
+        </select>
+        <br />
+        <input type="submit" value="Valider"/>
+    </form>
+</body>
 
