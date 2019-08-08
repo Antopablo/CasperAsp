@@ -51,7 +51,7 @@ namespace CasperAsp.Controllers
             else
             {
                 reader.Close();
-                return View("About");
+                return View("Index");
             }
         }
     }
