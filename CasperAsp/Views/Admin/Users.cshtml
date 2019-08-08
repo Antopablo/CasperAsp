@@ -3,23 +3,21 @@
     ViewBag.Title = "Users";
 }
 
-<h2>Users</h2>
+<head>
+    <link href="~/Content/AdminStyle.css" type="text/css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <h2>Users</h2>
 
-<table>
-    <tr>
-        <td>
-            <button id="AddUser">Ajouter</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button id="ModifUser">Modifier</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button id="SuprUser">Supprimer</button>
-        </td>
-    </tr>
-</table>
+    <div class="row">
+        <button id="AddUser" class="BoutonCustom" onclick="location.href='@Url.Action("Add")'">Ajouter</button>
+    </div>
+    <div class="row">
+        <button id="ModifUser" class="BoutonCustom" onclick="location.href='@Url.Action("Modify")'">Modifier</button>
+    </div>
+    <div class="row">
+        <button id="DeleteUser" class="BoutonCustom" onclick="location.href='@Url.Action("Delete")'">Supprimer</button>
+    </div>
+</body>
 

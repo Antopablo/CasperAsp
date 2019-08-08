@@ -1,0 +1,47 @@
+﻿@model CasperAsp.Models.User
+@{
+    ViewBag.Title = "Add";
+        Layout = null;
+}
+
+<head>
+    <link href="~/Content/AddStyle.css" type="text/css" rel="stylesheet" />
+</head>
+
+
+<body>
+
+    <h2>Ajouter un utilisateur</h2>
+
+    @using (Html.BeginForm("Add_validation", "Admin", FormMethod.Post))
+    {
+        {
+            <div class="login">
+                <div class="banner"></div>
+                <div class="wrapper">
+
+                    <div class="row">
+                        @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "label" })
+                        @Html.TextBoxFor(m => m.Name)
+                        @Html.ValidationMessageFor(m => m.Name)
+
+                    </div>
+
+                    <div class="row">
+                        @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "label" })
+                        @Html.PasswordFor(m => m.Password)
+                        @Html.ValidationMessageFor(m => m.Password)
+
+                    </div>
+
+                    <div class="row">
+                        <input type="submit" value="Valider" class="button_login" />
+                    </div>
+                </div>
+
+            </div>
+        }
+    }
+
+
+</body>

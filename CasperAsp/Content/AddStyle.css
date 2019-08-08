@@ -8,10 +8,15 @@
 }
 
 body {
-    background:url("https://www.probatmaintenance.fr/wp-content/uploads/2017/01/Fond-d%C3%A9cran-gris-Bars-Op%C3%A9ra-1440x2560.jpg") center no-repeat; background-size : cover;
+    background: url("https://www.probatmaintenance.fr/wp-content/uploads/2017/01/Fond-d%C3%A9cran-gris-Bars-Op%C3%A9ra-1440x2560.jpg") center no-repeat;
+    background-size: cover;
     height: auto;
 }
 
+h2 {
+    text-align : center;
+    margin-top: 30px;
+}
 div.login {
     position: absolute;
     top: 50%;
@@ -37,7 +42,7 @@ div.login {
 }
 
 .banner:before {
-    content: "Login";
+    content: "New";
     position: absolute;
     width: 80px;
     height: 80px;
@@ -62,29 +67,29 @@ div.login {
 }
 
 .wrapper {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 85%;
-        bottom : 10%;
-    }
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    bottom: 10%;
+}
 
 .row {
-        margin: 20px 0px;
-        display: flex !important;
-        justify-content: space-around !important;
-        
-    }
+    margin: 20px 0px;
+    display: flex !important;
+    justify-content: space-around !important;
+}
 
 .label {
-            font-size: 12px;
-            font-weight: 600;
-            color: rgb(100,100,100);
-            max-width : 50px;
-            max-height : 20px;
-            border : none !important;
-            border-width : 0 !important;
-        }
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(100,100,100);
+    max-width: 50px;
+    max-height: 20px;
+    border: none !important;
+    border-width: 0 !important;
+    white-space :normal;
+}
 
 .button_login {
     margin-top: 15px;
@@ -99,4 +104,3 @@ div.login {
     color: #fff;
     cursor: pointer;
 }
-

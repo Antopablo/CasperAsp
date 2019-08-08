@@ -1,0 +1,29 @@
+﻿body {
+    text-align : center;
+}
+
+a {
+    color : white !important;
+}
+
+a:hover {
+    text-decoration : none !important;
+}
+
+button {
+    margin-bottom : 30px !important;
+}
+
+.BoutonCustom {
+    margin-top: 15px !important;
+    font-size: 13px !important;
+    color: rgb(100,100,100) !important;
+    border: none !important;
+    outline: none !important;
+    height: 40px !important;
+    text-transform: uppercase !important;
+    background: rgba(255, 60, 65, 0.84) !important;
+    width: 50% !important;
+    color: #fff !important;
+    cursor: pointer !important;
+}
