@@ -27,3 +27,17 @@ button {
     color: #fff !important;
     cursor: pointer !important;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    height: 50px;
+    text-align : center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}

@@ -37,7 +37,7 @@ namespace CasperAsp.Controllers
             // connection mySQL
             myServerSQL = new MySqlConnection("server=137.74.118.171;userid=sta41;persistsecurityinfo=True;password=w5fc03;database=sta41");
             myServerSQL.Open();
-            cmd = new MySqlCommand("SELECT Identifiant FROM Users WHERE Identifiant = " + "'" + u.Name + "' AND Password = '" + u.Password + "'", myServerSQL);
+            cmd = new MySqlCommand("SELECT Identifiant FROM Users WHERE Identifiant = " + "'" + u.Identifiant + "' AND Password = '" + u.Password + "'", myServerSQL);
 
             MySqlDataReader reader = cmd.ExecuteReader();
 

@@ -10,8 +10,8 @@ namespace CasperAsp.Models
     {
         public int Id { get; set; }
 
-        [Display(Name = "Prénom")]
-        public string Name { get; set; }
+        [Display(Name = "Identifiant")]
+        public string Identifiant { get; set; }
 
         [Display(Name = "Mot de passe")]
         public string Password { get; set; }

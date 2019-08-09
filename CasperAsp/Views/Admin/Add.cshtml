@@ -21,15 +21,15 @@
                 <div class="wrapper">
 
                     <div class="row">
-                        @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "label" })
-                        @Html.TextBoxFor(m => m.Name)
-                        @Html.ValidationMessageFor(m => m.Name)
+                        @Html.LabelFor(m => m.Identifiant, htmlAttributes: new { @class = "label" })
+                        @Html.TextBoxFor(m => m.Identifiant)
+                        @Html.ValidationMessageFor(m => m.Identifiant)
 
                     </div>
 
                     <div class="row">
                         @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "label" })
-                        @Html.PasswordFor(m => m.Password)
+                        @Html.TextBoxFor(m => m.Password)
                         @Html.ValidationMessageFor(m => m.Password)
 
                     </div>

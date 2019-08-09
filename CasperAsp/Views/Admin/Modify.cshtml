@@ -1,0 +1,36 @@
+﻿@using CasperAsp.Models
+@model IEnumerable<User>
+
+@{
+    ViewBag.Title = "Modify";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/AdminStyle.css"/>
+</head>
+<body>
+
+    <h2>Modify</h2>
+    <table cellpadding="10" cellspacing="10">
+        <tr>
+            <th>Identifiant</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+        @foreach (User user in Model)
+        {
+            <tr>
+                <td>@user.Identifiant</td>
+                <td>@user.Password</td>
+                <td><button>Modifier</button></td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
